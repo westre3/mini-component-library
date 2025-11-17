@@ -36,6 +36,14 @@ Once running, you can visit storybook at http://localhost:6006.
 
 ## Troubleshooting
 
+### Using Node LTS
+
+If you run into any issues running a dev server, my first suggestion would be to make sure you’re using the current LTS (Long Term Support) version of Node. There tends to be lots of bugs and quirks with the very latest release of Node.js.
+
+For example, Node 25.2 introduced a [regression](https://github.com/nodejs/node/issues/60704) that leads to an error, and this can be fixed by downgrading to Node 24.11.1 (the current LTS version, at the time of writing).
+
+### Digital Envelope Routines
+
 You may get an error when running the `start` script that looks like this:
 
 ```
